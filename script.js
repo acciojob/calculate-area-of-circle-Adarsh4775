@@ -1,7 +1,18 @@
- function calculateArea() {
-            // Get the radius from the user using the prompt() function
-            let radius = prompt("Enter the radius of the circle:");
-            // write you code here and display the result to the user
-           
-}
-calculateArea();
+ function calculateArea(radius) {
+
+	  if(radius > 0)
+	  {
+         let radiusofCircle = (3.14*(radius**2)).toFixed(2);
+		  return "The area of the circle with radius " + radius + " is " + radiusofCircle; 
+	  }
+	 else{  
+          return "Enter a positive number";
+	 }
+    }
+ let radius = parseFloat(prompt("Enter the radius of the circle:"));
+calculateArea(radius);    
+
+alert(calculateArea(radius));  
+    
+  
+
