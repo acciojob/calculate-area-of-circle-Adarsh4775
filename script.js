@@ -2,7 +2,7 @@
 
 	  if(radius > 0)
 	  {
-         let radiusofCircle = 3.14*(radius**2).toFixed(2);
+         let radiusofCircle = (Math.PI*(radius**2)).toFixed(2);
 		  return "The area of the circle with radius " + radius + " is " + radiusofCircle; 
 	  }
 	 else{  
